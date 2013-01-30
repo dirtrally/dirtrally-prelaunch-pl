@@ -1,0 +1,568 @@
+body {
+	font-family: Verdana, Arial;
+	font-size: 10px;
+	color: #000;
+}
+a {
+	text-decoration: none;
+	/*color: #b42706;*/
+	/*color: #626F83;*/
+	color: #5d5a4a;
+}
+a:hover {
+	text-decoration: underline;
+	/*color: #626F83;*/
+	/*color: #b42706;*/
+	color: #5d5a4a;
+}
+/*input:hover, textarea:hover, select:hover    {
+    border-color: #333366;
+	background-color: #FFCC66;
+    border-width: 1px;
+    }
+*/
+input:focus, textarea:hover    {
+    border-color: #333366;
+	background-color: #FFCC99;
+    border-width: 1px;
+}
+#container {
+	margin: 0 auto;
+	width: 900px;
+}
+
+/* TOP classes */
+#header {
+	border-bottom: 1px solid #DFD9B9;
+	padding-bottom: 5px;
+	clear: both;
+	height: 172px;
+}
+
+#header-logo {
+	text-align: left;
+}
+#header-logo img {
+	padding: 10px;
+}
+
+#sub-header {
+	min-height: 40px;
+}
+
+#game-information {
+	float:left;
+	padding: 13px 3px 0px 10px;
+	width: 267px;
+	font-size: 11px;
+	font-family: Tahoma, Verdana;
+}
+
+#nav {
+	float: left;
+	padding-top: 5px;
+	width: 620px;
+}
+#untildate {
+	padding: 5px 5px 0px 10px;
+	font-size: 10px;
+	text-align: center;
+	color: #5d5a4a;
+}
+#topbalance {
+	font-family: Verdana;
+	padding-right: 10px;
+}
+
+/* MIDDLE classes */
+#middle {
+	margin: 15px auto;
+	min-height: 400px;
+}
+.middle_text {
+    padding: 10px 0px 10px 0px;
+    text-align: justify;
+}
+
+/* footer classes */
+#footer {
+	height: 70px;
+	border-top: 1px solid #c0c0c0;
+	margin-top: 10px;
+}
+
+#footer-links {
+	float: left;
+	margin-top: 10px;
+	width: 400px;
+	border-right: 1px solid #c0c0c0;
+}
+
+#footer-links ul {
+	float: left;
+	line-height: 14px;
+	margin-bottom: 2px;
+	width: 80px;
+}
+
+#footer-information {
+	float: left;
+	width: 480px;
+	margin-top: 10px;
+	padding-left: 10px;
+}
+
+.line {
+	background-image: url(../images/liners/line.png);
+	width: auto;
+	height: 1px;
+}
+
+.pagename {
+	font-size: 12px;
+	border-bottom: 1px solid #3c4a5f;
+}
+.name {
+	/*background-color: #626f83;
+	color: #d8e2f1; melynas */
+	/*background-color: #626f83;
+	border: 1px solid #3c4a5f;*/
+	background-color: #5d5a4a;
+	border: 1px solid #3a3730;
+	color: #fff;
+	padding: 0px 70px 0px 70px;
+}
+#pageload {
+	text-align: center;
+	font-size: 8px;
+	font-family: Verdana;
+	margin-top: 10px;
+}
+#foot-info {
+	margin-top: 10px;
+}
+#copyright {
+	text-align: left;
+	width: 100%;
+}
+/* various */
+
+.role {
+	color: #000;
+	text-decoration: underline;
+}
+
+/* for standings: promotions, relegations */
+.promote1 {
+	background-color: #daf0b4;
+	border-bottom: 1px solid #ccc;
+	padding: 3px;
+}
+.promote2 {
+	background-color: #dfd9b9;
+	border-bottom: 1px solid #ccc;
+	padding: 3px;
+}
+.promote1:hover, .promote2:hover {
+	background-color: #ece5bd;
+}
+.promote1 a, .promote2 a {
+	/*color: #479712;
+	font-weight: bold;*/
+}
+.relegate1 {
+	background-color: #f0b4b4;
+	border-bottom: 1px solid #ccc;
+	padding: 3px;
+}
+.relegate2 {
+	background-color: #f0b4b4;
+	border-bottom: 1px solid #ccc;
+	padding: 3px;
+}
+.relegate1:hover, .relegate2:hover {
+	background-color: #ece5bd;
+}
+.relegate1 a, .relegate2 a {
+	/*color: #db1e1e;
+	font-weight: bold;*/
+}
+
+/* success messages */
+
+.success-message {
+    padding: 8px;
+	background-color:#daf0b4;
+    border:1px solid #6dae4a;
+    margin: 10px;
+    color: #000000;
+}
+.error-message {
+    padding: 8px;
+    background-color: #f7eaa0;
+    border: 1px solid #cc9e34;
+    margin: 10px;
+    color: #000000;
+}
+.success-box {
+	font-size: 12px;
+	background-color: #fff;
+	color: #000;
+	padding: 15px 15px 15px 51px;
+	border: 1px solid #ddd;
+	background-image: url(/images/icons/success.png);
+	background-position: 10px 7px;
+	background-repeat: no-repeat;
+}
+.error-box {
+	font-size: 12px;
+	background-color: #fff;
+	color: #000;
+	padding: 15px 15px 15px 51px;
+	border: 1px solid #ddd;
+	background-image: url(/images/icons/warning.png);
+	background-position: 10px 7px;
+	background-repeat: no-repeat;
+}
+.error-box ul {
+	padding: 5px 5px 5px 10px;
+	line-height:15px;
+}
+
+.message {
+	margin: 10px;
+	background-color:#ffd6d6;
+	border:1px solid #b42706;
+	background-image: url(/images/icons/error.png);
+	background-position: 8px;
+	background-repeat: no-repeat;
+	color:#b42706;
+	padding:15px 15px 15px 45px;
+	min-width: 500px;
+	font-size: 13px;
+	font-family: Verdana;
+}
+.messageg {
+	margin: 10px;
+	background-color:#daf0b4;
+	background-image: url(/images/icons/success.png);
+	background-position: 8px 8px;
+	background-repeat: no-repeat;
+	border:1px solid #6dae4a;
+	color:#4cae17;
+	padding:15px 15px 15px 45px;
+	min-width: 500px;
+	font-size: 13px;
+	font-family: Verdana;
+}
+.message a:link, .message a:visited {
+    color: #fff;
+}
+
+/* errors css */
+.errorField {
+    background-color: #e04444;
+    color: #ffffff;
+    border: 1px solid #ab1515;
+}
+#rsvErrors { 
+    display: none; 
+    padding: 8px; 
+    background-color: #f7eaa0;
+    border: 1px solid #cc9e34;
+    margin: 10px;
+    color: #000000;
+    font-size: 11px;
+}
+#errorsWithoutJs {
+    padding: 8px;
+    background-color: #f7eaa0;
+    border: 1px solid #cc9e34;
+    margin-bottom: 12px;
+    color: #000000;
+    font-size: 11px;
+}
+
+/** for new index (when not loged into the site) **/
+
+/* show live groups */
+#show_live_groups {
+    width: 500px;
+    margin: 10px auto;
+    /*background-color: #ccc;*/
+}
+#live_logo {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#show_live_form {
+    margin: 5px auto 10px auto;
+    width: 485px;
+    background-color: #ece5bd;
+    border: 1px solid #dfd9b9;
+    min-height: 6px;
+    text-align: center;
+}
+#slg {
+    width: 485px;
+    text-align: center;
+    background-color: #ece5bd;
+    border: 1px solid #dfd9b9;
+    margin: 5px auto 10px auto;
+    font-size: 13px;
+    color: #5d5a4a;
+    font-weight: bold;
+    height: 6px;
+}
+#show_groups {
+    padding: 5px;
+
+}
+#live_title {
+    font-size: 16px;
+    color: #5d5a4a;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#live_txt {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.live_input {
+    background-color: #dfd9b9;
+    border: 1px solid #5d5a4a;
+    margin: 1px;
+    font-size: 11px;
+}
+.live_submit {
+    background-color: #5d5a4a;
+    color: #fff;
+    border: none;
+    width: 45px;
+    font-size: 11px;
+}
+.live_padding {
+    margin-bottom: 2px;
+}
+
+#server-down {
+	margin: 100px auto;
+	text-align: center;
+	font-size: 12px;
+	width: 400px;
+}
+.big-margin {
+	margin-bottom: 150px;
+}
+
+#footpanel {
+	position: fixed;
+	bottom: 0; left: 0;
+	z-index: 9999; /*--Keeps the panel on top of all other elements--*/
+	background: #dfd9b9;
+	border: 1px solid #ece5bd;
+	border-bottom: none;
+	/*width: 94%;*/
+	margin: 0 460px;
+}
+
+#footpanel ul {
+	padding: 0; margin: 0;
+	float: left;
+	width: 100%;
+	list-style: none;
+	border-top: 1px solid #fff; /*--Gives the bevel feel on the panel--*/
+	font-size: 1.1em;
+}
+#footpanel ul li{
+	padding: 0; margin: 0;
+	float: left;
+	position: relative;
+}
+#footpanel ul li a{
+	padding: 5px;
+	float: left;
+	text-indent: -9999px; /*--For text replacement - Shove text off of the page--*/
+	height: 16px; width: 16px;
+	text-decoration: none;
+	color: #333;
+	position: relative;
+}
+html #footpanel ul li a:hover{	background-color: #fff; }
+html #footpanel ul li a.active { /*--Active state when sub-panel is open--*/
+								 background-color: #fff;
+								 height: 17px;
+								 margin-top: -2px; /*--Push it up 2px to attach the active button to sub-panel--*/
+								 border: 1px solid #555;
+								 border-top: none;
+								 z-index: 200; /*--Keeps the active link on top of the sub-panel--*/
+								 position: relative;
+}
+
+#footpanel a.foot-home{
+	background: url(/images/icons/footer/footer-icons.png) no-repeat 15px center;
+	background-position: 14px 8px; width: 23px;
+	padding-left: 25px;
+	border-right: 1px solid #ece5bd;
+	text-indent: 0; /*--Reset text indent since there will be a combination of both text and image--*/
+}
+
+a.foot-countries{
+	background: url(/images/icons/footer/footer-icons.png) no-repeat center center;
+	background-position: -132px 5px;
+	width: 16px;
+}
+a.foot-profile{
+	background: url(/images/icons/footer/footer-icons.png) no-repeat center center;
+	background-position: -398px 5px;
+	width: 16px;
+}
+a.foot-account{
+	background: url(/images/icons/footer/footer-icons.png) no-repeat center center;
+	background-position: -464px 5px;
+	width: 16px;
+}
+a.foot-notes{
+	background: url(/images/icons/footer/footer-icons.png) no-repeat center center;
+	background-position: -332px 5px;
+	width: 16px;
+}
+a.foot-messages{
+	background: url(/images/icons/footer/footer-icons.png) no-repeat center center;
+	background-position: -200px 5px;
+	width: 16px;
+}
+a.foot-rallyorders{
+	background: url(/images/icons/footer/footer-icons.png) no-repeat center center;
+	background-position: -267px 5px;
+	width: 16px;
+}
+a.foot-live{
+	background: url(/images/icons/footer/footer-icons.png) no-repeat center center;
+	background-position: -70px 5px;
+	width: 16px;
+}
+
+#footpanel a small {
+	text-align: center;
+	width: 70px;
+	background: url(/images/icons/footer/pop.png) no-repeat center bottom;
+	padding: 5px 5px 11px;
+	display: none; /*--Hide by default--*/
+	color: #fff;
+	font-size: 1em;
+	text-indent: 0;
+}
+#footpanel a:hover small{
+	display: block; /*--Show on hover--*/
+	position: absolute;
+	top: -35px; /*--Position tooltip 35px above the list item--*/
+	left: 50%;
+	margin-left: -40px; /*--Center the tooltip--*/
+	z-index: 9999;
+}
+
+#footpanel ul li div a {
+	text-indent: 0;
+	width: auto;
+	height: auto;
+	padding: 0;
+	float: none;
+	color: #00629a;
+	position: static;
+}
+#footpanel ul li div a:hover {
+	text-decoration: underline;
+} /*--Reset hover style for sub-panel links--*/
+
+#footpanel .subpanel {
+	position: absolute;
+	left: 0; bottom: 27px;
+	display: none;	/*--Hide by default--*/
+	width: 198px;
+	border: 1px solid #555;
+	background: #fff;
+	overflow: hidden;
+}
+#footpanel h3 {
+	background: #526ea6;
+	padding: 5px 10px;
+	color: #fff;
+	font-size: 1.1em;
+	cursor: pointer;
+}
+#footpanel h3 span {
+	font-size: 1.5em;
+	float: right;
+	line-height: 0.6em;
+	font-weight: normal;
+}
+#footpanel .subpanel ul{
+	padding: 0; margin: 0;
+	background: #fff;
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 2px;
+}
+#footpanel .subpanel li{
+	float: none; /*--Reset float--*/
+	display: block;
+	padding: 0; margin: 0;
+	overflow: hidden;
+	clear: both;
+	background: #fff;
+	position: static;  /*--Reset relative positioning--*/
+	font-size: 0.9em;
+}
+
+#server-down h1 {
+	font-weight: normal !important;
+	font-size: 12px;
+	margin: 0 auto;
+}
+.announcement {
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 20px;
+	color: red;
+}
+.fb-fanbox {
+	text-align: center;
+}
+#showlive {
+	margin: 0 auto;
+}
+.inbox-full, .inbox-full:hover {
+	color: #ff0000;
+}
+#adsense {
+	margin: 0 auto;
+	padding-top: 25px;
+	width: 100px;
+}
+#sidebar .select {
+	font-size: 10px;
+	width: 140px;
+	background-color: #dfd9b9;
+    border: 1px solid #5d5a4a;
+    color: #3a3730;
+	font-family: Verdana;
+}
+.current-manager {
+	background-color: #fdffbc;
+	border-bottom: 1px solid #bab492;
+	font-weight: bold;
+}
+.current-manager a {
+	color: #5d5a4a;
+	font-weight: bold;
+}
+
+/* disabled links will be shown like this */
+a.disabled-in-sidebar:active, a.disabled-in-sidebar:link,
+a.disabled-in-sidebar:hover, a.disabled-in-sidebar:visited {
+	color: #c0c0c0;
+	text-decoration: none;
+}

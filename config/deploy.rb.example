@@ -1,0 +1,13 @@
+set :scm, :git
+set :repository, 'git@github.com:giedriusr/dirtrally-prelaunch.git'
+set :user, 'root'
+set :runner, 'www-data'
+set :runner_group, 'www-data'
+set :deploy_via, :remote_cache
+
+desc 'Deploy to dirtrally.net installation'
+task :prelaunch do
+  set :application, 'dirtrally'
+  set :deploy_to, "/srv/www/#{application}"
+  server 'dirtrally.net', :web
+end
